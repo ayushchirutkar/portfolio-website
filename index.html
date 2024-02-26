@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/ae6a8d3ad6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img class="logo" src="images/logo.png" alt="Logo"/>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Ayush</span><br/>from India</h1>
+        </div>
+    </div>
+</div>
+
+<!---------------------about------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/user.png"/>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, My name is Ayush Chirutkar. I have done my Schooling and Junior College Studies from Mumbai 
+                and my B.Tech from Pune's MIT-World Peace Univeristy. I am a enthusiast web developer with experience 
+                in various programming languages such as HTML, CSS and JavaScript. My main focus is on front-end 
+                development using ReactJS library for I am a hard working, honest individual. I am a good timekeeper, 
+                always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. 
+                I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, 
+                and able to listen effectively when solving problems.</p>
+                    
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development:</span><br/><h4>Web App Development, Bootstrap</h4></li>
+                        <li><span>Programming Languages:</span><br/><h4><ul id="languages"><li>HTML5/CSS</li><li>JavaScript</li><li>MySQL</li><li>React.js</li><li>Python</li></ul></h4></li>
+                        <li><span>Cloud Technologies:</span><br/><h4>Microsoft Azure</h4></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Feb-2024 to Mar-2024</span><br/><h4>Internship at Navodita Infotech<h4></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-present</span><br/><h4>B.Tech Computer Science & Engineering</h4>MIT-World Peace University, Pune</li>
+                        <li><span>2019-2021</span><br/><h4>Higher Secondary(12th)</h4>NMF Junior College, Mumbai</li>
+                        <li><span>2018-2019</span><br/><h4>Senior Secondary(10th)</h4>Podar International School, Mumbai</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!---------------Projects-------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-regular fa-id-card"></i>
+                <h2>Attendance Management System using Arduino Uno</h2>
+                <p>An Attendance Management System utilizing an Arduino board automates attendance tracking via RFID or biometric sensors. 
+                It records entry and exit data, storing it locally or transmitting it to a central database. This system streamlines attendance 
+                monitoring, enabling real-time reporting and efficient management of attendance records in various settings.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Online Coding Collaborative Platform</h2>
+                <p>An online coding collaborative platform is a web-based application that allows multiple users to write, edit, and debug code together in real-time. 
+                Users can collaborate on coding projects, share screens, chat, and even video conference within the platform. It provides features like version control, 
+                syntax highlighting, and code review tools to enhance productivity and teamwork among developers working remotely or in distributed teams.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h2>Expense Tracker Management System using React.js</h2>
+                <p>An Expense Tracker Management System built with React.js is a web application designed to help users manage their finances efficiently. 
+                It allows users to input and categorize their expenses, track spending patterns over time, and generate reports for better financial planning. 
+                Utilizing React.js, the system offers a responsive and interactive user interface, enabling smooth navigation and seamless data visualization for 
+                enhanced user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------Contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> ayushchirutkar10@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i> +91-7045735785</p>
+                <div class="social-icons">
+                    <a href="https://in.linkedin.com/in/ayush-c-a90359128"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ayushchirutkar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/aayush.chirutkar"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ayushchirutkar"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="./images/Ayush-Chirutkar-B.Tech.-ComputerScience&Engineering-MIT-WPU-3Sem-2024-01-15-10-26-11-754903.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f9fdf0e8-8999-4b89-b8bd-9ab65109b94d">
+                    <input type="text" name="Name" placeholder="Your Name" required/>
+                    <input type="email" name="Email" placeholder="Your Email" required/>
+                    <textarea  name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ayush Chirutkar.</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+
+
+</html>
